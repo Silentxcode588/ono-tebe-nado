@@ -1,1 +1,26 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  width: 1052px;
+  height: 105px;
+  background-color: bisque;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+.header__link {
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+.address {
+  justify-self: end;
+}
+
+.header__logo-image {
+  width: 129px;
+  height: 124px;
+}
+.header__links-list-item {
+  list-style-type: circle;
+}
