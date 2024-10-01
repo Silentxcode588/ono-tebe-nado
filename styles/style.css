@@ -1,61 +1,116 @@
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-   /* width: 1052px;
-  height: 105px; */
   align-items: center;
-
-  padding: 92px 24px 96px 24px;
+  padding: 92px 50px 96px 50px;
 }
 .header__menu {
-  padding: 44px 36px 39px 27px;
-  gap: 13px;
+  /* padding: 44px 36px 39px 27px;   */
+  padding-right: 36px;
 }
 .header__links-list {
   display: flex;
+  flex-direction: row;
   gap: 32px;
   font-family: Raleway;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.13px;
   letter-spacing: 0.01em;
+  justify-content: space-between;
 }
 .header__links-list-item {
   list-style-type: circle;
 }
 .header__link {
-  
   text-decoration: none;
 }
 .header__link-border {
-    border-bottom: 1px solid;
- 
+  border-bottom: 1px solid;
 }
 .header__links-list-item_no-bullit {
   list-style-type: none;
-
 }
 
 .header__logo {
   display: block;
-  width: 129px;
+  width: 140px;
+  height: 105px;
 }
 .header__logo-image {
   width: 100%;
 }
 .address {
   font-family: Raleway;
+  font-style: normal;
   font-size: 18px;
   font-weight: 400;
   line-height: 24.3px;
-   justify-self: end; 
-  color:  #000000;
-  
+  max-width: 237px;
+  width: 100%;
+  justify-self: end;
 }
 .header__address {
   display: block;
 }
 .info {
-    border-bottom: 1px solid;
-    text-decoration: none;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+.cover {
+  min-height: 757px;
+  padding: 96px 179px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cover__title {
+  font-family: Raleway;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115px;
+  letter-spacing: 30px;
+
+  text-transform: uppercase;
+  color: #ffffff;
+  /* padding-top: 70px; */
+}
+.accent_span {
+  display: block;
+  letter-spacing: 0.3em;
+}
+.aligned-text {
+}
+.aligned-text_center {
+  /* padding-top: 11px; */
+  text-align: center;
+  line-height: 1;
+}
+.aligned-text_right {
+  text-align: right;
+  line-height: 1;
+}
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+.no-letter-spacing {
+  letter-spacing: 0em;
+}
+.cover__description {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cover__description-text {
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.letter-spacing-v {
+  letter-spacing: 1.1em;
 }
